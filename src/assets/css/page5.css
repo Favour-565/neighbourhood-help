@@ -1,0 +1,77 @@
+/* page5.css
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .backarrow {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .central-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 80vh; 
+  }
+
+  .from{
+    width: 60%; 
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 34px;
+    box-shadow: 0px 11px 25px 0px #ccc;
+    box-sizing: border-box;
+    border: 2px solid whitesmoke;
+    gap: 10px;
+    padding: 32px;
+    opacity: 0px; 
+  }
+  
+   .from-container {
+    padding: 20px;
+    
+  } 
+  
+  .successMessage {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .successMessage img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  .btn {
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: 20px;
+    width: 250px;
+    padding: 1.5em;  
+    text-decoration: none;
+    background-color: #000080; 
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 17px; 
+    cursor: pointer;
+    transition: 0.3s; 
+  }
+
+  
+  .btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+  }
+  
+   */

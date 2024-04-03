@@ -1,0 +1,28 @@
+flag.css
+.PhoneInput {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .PhoneInputInput {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  
+  .PhoneInputCountryIcon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .PhoneInputInternationalIconPhone {
+    margin-right: 5px;
+  }
+  
