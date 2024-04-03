@@ -116,6 +116,8 @@
 }
 
 
+
+
   
 
 @keyframes animate {
@@ -129,84 +131,112 @@
     }
   }
   
- .form-container{
+.form-container{
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     display: grid; 
     place-items: center;
-    width: 100%;
-    border-radius: 34px;
 
+    width: 100%;
     
-}  */
-/* label {
-    display: flex;
+}
+label {
+    display: block;
     justify-content: flex-start;
     margin-bottom: 0.5rem;
   }
-   */
-/* input{
+  
+input{
+    width: 380px;
     display: flex;
-    padding: 0.75rem; 
+    padding: 1rem; 
     border: 2px solid #000080;
-    border-radius: 0.25rem;
-  } */
- 
-/* .form {
+    border-radius: 8px;
+  }
+
+  
+
+  .central-container{
+    width: 100%;  
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
+  }
+  
+  
+ 
+.form {
     width: 60%; 
     margin: 0 auto;
     border: 1px solid #ccc;
-    border-radius: 34px;
+    border-radius: 1rem;
+    padding: 1.5rem; 
     box-shadow: 0px 11px 25px 0px #ccc;
     box-sizing: border-box;
     border: 2px solid whitesmoke;
-    gap: 10px;
-    padding: 32px;
-    opacity: 0px; 
-    
-} */
-/* .form-step {
+}
+  
+ 
+  
+  
+  .form-step {
     display: none;
     transform-origin: top;
     animation: animate 0.5s;
     margin-bottom: 20px;
-  } */
+  }
   
-/* .form-step-active {
+  
+  
+  .form-step-active {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
     
   
-  } */
+  }
   
-  /* .form-step2{
+  .form-step2{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
     
-  } */
-
-/* .active{
+  }
+  
+  .form-step3{
+   
     display: flex;
-    gap:40px; 
-    justify-content:center;
-}
-
-.activegroup input{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-step3 input{
     width: 380px;
-    
-
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #000080;
+  }
+  
+ 
+select{
+    padding: 15px;
+    width: 380px;
+    gap: 2px; 
+    border: 2px solid #000080;
+    border-radius: 8px; 
+    opacity: 0px; 
+  
 }
 
-.group input{
-    width: 200px;
-    
-
-}
   
   
 .btn {
@@ -229,4 +259,9 @@
   }
   
   
-   */
+  
+
+.prev{
+    display: flex;
+}
+ */

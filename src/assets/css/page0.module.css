@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-color: rgb(11, 78, 179);
   }
   
@@ -26,6 +26,11 @@
   }
   
   .header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-bottom: 2%;
    
@@ -131,11 +136,11 @@
     place-items: center;
     width: 100%;
     border-radius: 34px;
-    padding: 20px;
+
     
-} 
+}  
 label {
-    display: block;
+    display: flex;
     justify-content: flex-start;
     margin-bottom: 0.5rem;
   }
@@ -149,7 +154,7 @@ input{
  
 .form {
     
-    width: 75%; 
+    width: 60%; 
     margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 34px;
@@ -159,7 +164,6 @@ input{
     gap: 10px;
     padding: 32px;
     opacity: 0px; 
-
     
 }
 .form-step {
@@ -185,36 +189,24 @@ input{
     margin-bottom: 20px;
     
   }
-  
-  .form-step3{
-   
+
+.active{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    
-  }
-  
-  .form-step3 input{
-    width: 380px;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    text-align: center;
-    border: 2px solid #000080;
-  }
-  
- 
-select{
-    padding: 15px;
-    width: 380px;
-    gap: 2px; 
-    border: 2px solid #000080;
-    border-radius: 8px; 
-    opacity: 0px; 
-  
+    gap:40px; 
+    justify-content:center;
 }
 
+.activegroup input{
+    width: 380px;
+    
+
+}
+
+.group input{
+    width: 200px;
+    
+
+}
   
   
 .btn {
@@ -237,4 +229,4 @@ select{
   }
   
   
-  
+   */

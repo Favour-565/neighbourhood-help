@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/page0.css';
+import PageCss from '../assets/css/page0.module.css'
 import Group0 from '../assets/image/Group0.svg';
 import BackArrow from '../assets/image/arrow.svg';
 import 'react-phone-number-input/style.css'

@@ -2,6 +2,8 @@ import React from "react";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import "./App.css";
+import "./index.css";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import ResetPassword from "./pages/ResetPassword";

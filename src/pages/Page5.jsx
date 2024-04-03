@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/page5.css';
+import PageCss from '../assets/css/page5.module.css'
 import Group5 from '../assets/image/Group5.svg';
 import BackArrow from '../assets/image/arrow.svg';
 

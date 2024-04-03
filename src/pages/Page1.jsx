@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/page1.css';
+import PageCss from '../assets/css/page1.module.css'
 import Group from '../assets/image/Group.svg';
 import BackArrow from '../assets/image/arrow.svg';
 
@@ -7,16 +7,16 @@ import BackArrow from '../assets/image/arrow.svg';
 const Page1 = () => {
   return (
     <div>
-        <div className="backarrow">
+      <div className='backarrow'>
         <img src={BackArrow} alt="back-arrow" />
         <a href="/page1">Back</a>
       </div>
-      <div className="header">
+      <div className='header'>
         <h1>Receive a Package?</h1>
         <p>Get your packages delivered effortlessly. Just request, and our reliable agents <br /> will take care of the rest. Fast, secure, and hassle-free</p>
       </div>
 
-      <div className="central-container">
+      <div className="centralContainer">
         <div className="form-container">
           <form action="#" className="form">
             {/* <h1 className="text-center">Registration Form</h1> */}
@@ -31,7 +31,8 @@ const Page1 = () => {
             </div>
             <hr />
 
-            <div className="package-header">
+            {/* in a case where you want to use specific styling and cut across styling  */}
+            <div className={`${PageCss.packageHeader} header`}>
               <div>
                 <img src={Group} alt="group-img" />
               </div>
@@ -42,7 +43,7 @@ const Page1 = () => {
             </div>
 
             {/* Steps */}
-            <div className="form-step form-step-active">
+            <div className={`${PageCss.formStep} ${PageCss.formStepActive}`}>
               <div className="input-group">
                 <label htmlFor="height">Height of Package:</label>
                 <select id="height" name="height">
@@ -87,7 +88,7 @@ const Page1 = () => {
               </div>
             </div>
           </form>
-          <a href="/page2" class="btn btn-next">Next</a>
+          <a href="/page2" className="btn btn-next">Next</a>
         </div>
       </div>
     </div>

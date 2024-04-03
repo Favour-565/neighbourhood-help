@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/css/page2.css';
+import PageCss from '../assets/css/page2.module.css'
 import Group2 from '../assets/image/Group2.svg';
 import BackArrow from '../assets/image/arrow.svg';
 import 'react-phone-number-input/style.css';
@@ -8,17 +8,17 @@ import PhoneInput from 'react-phone-number-input';
 const Page2 = () => {
     const [phone, setPhone] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
-  const [valid, setValid] = useState(true);
+    const [valid, setValid] = useState(true);
 
-  const handleChange = (value) => {
-    setPhoneNumber(value);
-    setValid(validatePhoneNumber(value));
-  };
+    const handleChange = (value) => {
+        setPhoneNumber(value);
+        setValid(validatePhoneNumber(value));
+    };
 
-  const validatePhoneNumber = (phoneNumber) => {
-    const phoneNumberPattern = /^\+?[1-9]\d{1,14}$/;
-    return phoneNumberPattern.test(phoneNumber);
-  };
+    const validatePhoneNumber = (phoneNumber) => {
+        const phoneNumberPattern = /^\+?[1-9]\d{1,14}$/;
+        return phoneNumberPattern.test(phoneNumber);
+    };
 
     return (
         <div>
@@ -59,16 +59,19 @@ const Page2 = () => {
                                 <label htmlFor="name">Name of Sender</label>
                                 <input type="text" id="name" name="name" />
                             </div>
-                            
-                                <div>
-                                    <label htmlFor="phone">Phone Number</label>
-                                    <PhoneInput 
-                                        defaultCountry="NG"
-                                        value={phone}
-                                        onChange={(phone) => setPhone(phone)}
-                                    />
-                                </div>
-                            
+
+                            <div>
+                                <label htmlFor="phone">Phone Number</label>
+                                <PhoneInput
+                                    className='form-input-phone-input'
+                                    defaultCountry="NG"
+                                    international
+                                    placeholder="Enter phone number"
+                                    value={phone}
+                                    onChange={(phone) => setPhone(phone)}
+                                />
+                            </div>
+
                         </div>
 
                         <div className="form-step2">
